@@ -40,8 +40,6 @@ export default function InfiniteScrollTable({ rows, handleTableAction, loading, 
   const scrollListener = useCallback(() => {
     let bottom = tableEl.current.scrollHeight - tableEl.current.clientHeight;
     // if you want to change distanceBottom every time new data is loaded
-    // console.log("F-1",bottom)
-    // console.log("F-2", tableEl.current)
     // don't use the if statement
     if (!distanceBottom) {
       // calculate distanceBottom that works for you
